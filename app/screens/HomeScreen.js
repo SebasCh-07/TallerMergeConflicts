@@ -2,7 +2,9 @@ import { View, Text, StyleSheet, Button } from 'react-native'
 
 export const Home = ({ navigation }) => {
     return <View style={styles.container}>
-        <Text>HOME</Text>
+        <Text>Bienvenido a mi aplicación, soy Sebastián Chamorro</Text>
+        <Text>Me gusta Programar</Text>
+
 
         <View style={styles.botones}>
 
@@ -12,6 +14,7 @@ export const Home = ({ navigation }) => {
                     onPress={() => {
                         navigation.navigate('ContactsNav');
                     }}
+                    color="green"
                 />
             </View>
 
@@ -22,6 +25,7 @@ export const Home = ({ navigation }) => {
                 onPress={() => {
                     navigation.navigate('ProductNavigation');
                 }}
+                color="green"
             />
 
         </View>
@@ -33,7 +37,7 @@ export const Home = ({ navigation }) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: 'gray',
         alignItems: 'center',
         justifyContent: 'center',
     },
