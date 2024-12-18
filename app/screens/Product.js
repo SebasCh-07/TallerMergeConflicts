@@ -9,7 +9,7 @@ export const Product = ({ navigation }) => {
         <Button
             title='HOME'
             onPress={() => {
-                navigation.navigate('WellcomePaul');
+                navigation.navigate('WellcomeNav');
             }}
         />
     </View>
